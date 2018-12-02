@@ -8,7 +8,11 @@
 import scrapy
 
 
-class TutorialItem(scrapy.Item):
+class TaobaoSItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    url = scrapy.Field()
+    price = scrapy.Field()
+    name = scrapy.Field()
+    num = scrapy.Field()
+    shop_name = scrapy.Field()
